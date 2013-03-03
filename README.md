@@ -21,6 +21,45 @@ Though there is a fixed protcol, that has to be obeyed by both parties.
 The Message Passing is handled by Interface Callback (ICB) class, and the family.
 Where each specific child implements a specific protocol.
 
+How?
+----
+
+This is how the output looks on my Terminal.
+
+```
+$ make
+$ ./callback_demo 
+Client()
+Server()
+Client: connect
+ICB()
+HelloCB()
+Server: hello 
+Client: hello [1]
+~HelloCB()
+~ICB()
+ICB()
+~BindCB()
+Server: bind 
+Client: bind [2.1,2.8]
+~BindCB()
+~ICB()
+ICB()
+~TalkCB()
+Server: talk 
+Client: talk [3,3.5]
+~TalkCB()
+~ICB()
+ICB()
+ByeCB()
+Server: bye 
+Client: bye [4.9]
+~ByeCB()
+~ICB()
+~Server()
+~Client()
+```
+
 Where?
 ------
 
