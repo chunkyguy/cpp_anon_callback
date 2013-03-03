@@ -29,7 +29,7 @@ I'm using this in my Hideous Game Engine. I have a Screen class that holds refer
 The Entities have no idea about their Screen class.
 
 For example, the Weapon class blindly sends start and end points, whenever it fires a bullet. 
-In hope that anyone implementing the method like:
+In hope that someone could be implementing the method like:
 
 ```cpp
 void doCollisionCheck(vec2 start, vec2 end){
@@ -38,7 +38,13 @@ void doCollisionCheck(vec2 start, vec2 end){
 ```
 
 
-Cheers!
--------
+Next?
+-----
+
+This code is strictly just a demo. Non-optimized. Not production standard.
+
+I assume you add more error checkings and optimiztion in your code as needed.
 
 Hope this comes to help to somebody else also. :D
+
+Cheers!
